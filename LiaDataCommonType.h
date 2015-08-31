@@ -2,7 +2,11 @@
 #define LIA_DATA_COMMON_TYPE_H
 
 #include <stdio.h>
+#include <string.h>
 #include<stdlib.h>
+#include <sys/wait.h>
+#include<sys/types.h>
+#include <fcntl.h>
 
 typedef unsigned char Uint8;
 typedef unsigned short Uint16;
