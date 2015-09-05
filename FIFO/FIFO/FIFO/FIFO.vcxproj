@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BFD26745-C423-4406-8E79-7EAF530AA1C9}</ProjectGuid>
+    <ProjectGuid>{65C1C3EF-7E45-4CED-B8DD-E616C5DD1C13}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>TEST2</RootNamespace>
+    <RootNamespace>FIFO</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,11 +146,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\HelloWorld.h" />
-    <ClInclude Include="..\..\LiaDataCommonType.h" />
+    <ClInclude Include="..\src\LiaFifoApi.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\HelloWorld.c" />
+    <ResourceCompile Include="FIFO.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\LiaFifoApi.c" />
+    <ClCompile Include="..\src\LiaFifoClientMain.c" />
+    <ClCompile Include="..\src\LiaFifoSeverMain.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,1 @@
+gcc LiaFifoSeverMain.c LiaFifoApi.c -o LiaFifoSeverMain.out

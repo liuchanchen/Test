@@ -1,0 +1,1 @@
+gcc LiaFifoClientMain.c LiaFifoApi.c -o LiaFifoClientMain.out

@@ -15,15 +15,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\LiaDataCommonType.h">
+    <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\HelloWorld.h">
+    <ClInclude Include="..\src\LiaFifoApi.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\HelloWorld.c">
+    <ResourceCompile Include="FIFO.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\LiaFifoApi.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LiaFifoClientMain.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LiaFifoSeverMain.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
