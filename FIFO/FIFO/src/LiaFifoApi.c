@@ -9,25 +9,17 @@ description:  Creat Fifo.If the fifo has
 Author: liujian
 Date: 2015/09/04
 Input: const Int8 * pi8PathSeverToClient £ºFIFO path name
-		pi8PathClientToSever:FIFO name
 		 Int32 mode £ºfifo mode
 Returns:   0 indicates success
 			negative numbers indicate failure
 ************************************/
-Int32 Lia_Fifo_Init(const Int8 * pi8PathSeverToClient, Int8 * pi8PathClientToSever,Int32 mode)
+Int32 Lia_Fifo_Init(const Int8 * pi8Path,Int32 mode)
 {
-	JUDGE_POINTER_IS_NULL(pi8PathSeverToClient);
-	JUDGE_POINTER_IS_NULL(pi8PathClientToSever);
+	JUDGE_POINTER_IS_NULL(pi8Path);
 
-	if ((mkfifo(pi8PathSeverToClient, mode) < 0) && (EEXIST != errno))
+	if ((mkfifo(pi8Path, mode) < 0) && (EEXIST != errno))
 	{
 		printf("fifo creats error:%s!\n",strerror(errno));
-		return -1;
-	}
-
-	if ((mkfifo(pi8PathClientToSever,mode)<0)&&(EEXIST!=errno))
-	{
-		printf("fifo creats error:%s!\n", strerror(errno));
 		return -1;
 	}
 
@@ -67,6 +59,7 @@ Returns: 0 indicates success
 Int32 Lia_Fifo_Read(Int8 *pi8Path,void * pBuf,Int32 i32MaxReadLen)
 {
 	Int32 i32Fd=-1;
+	Int32 i32ReadCnt = -1;
 	JUDGE_POINTER_IS_NULL(pBuf);
 	JUDGE_POINTER_IS_NULL(pi8Path);
 	ACCESS(pi8Path,F_OK);
@@ -76,10 +69,15 @@ Int32 Lia_Fifo_Read(Int8 *pi8Path,void * pBuf,Int32 i32MaxReadLen)
 		printf("open error:%s\n", strerror(errno));
 		return -1;
 	}
-	if (read(i32Fd,pBuf,i32MaxReadLen)<0)
+	i32ReadCnt = read(i32Fd, pBuf, i32MaxReadLen);
+	if (i32ReadCnt<0)
 	{
 		printf("read error\n");
 		return -1;
+	}
+	else if(0== i32ReadCnt)//write fifo has closed,unlink the read fifo
+	{
+		unlink(pi8Path);
 	}
 	close(i32Fd);
 
@@ -111,7 +109,6 @@ Int32 Lia_Fifo_Write(Int8 *pi8Path,const void * pBuf, Int32 i32WriteLen)
 		printf("open error:%s\n",strerror(errno));
 		return -1;
 	}
-	printf("pBuf:%s,i32WriteLen:%d\n", pBuf, i32WriteLen);
 	if (write(i32Fd, pBuf, i32WriteLen) < 0)
 	{
 		printf("write error\n");

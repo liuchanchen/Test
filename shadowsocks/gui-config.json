@@ -1,0 +1,79 @@
+{
+    "configs": [
+        {
+            "server": "jp01-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        },
+        {
+            "server": "jp06-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        },
+        {
+            "server": "sg01-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        },
+        {
+            "server": "sg02-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        },
+        {
+            "server": "sg03-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        },
+        {
+            "server": "sg05-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        },
+        {
+            "server": "us01-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        },
+        {
+            "server": "us02-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        },
+        {
+            "server": "us03-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        },
+        {
+            "server": "hk02-30.ssv4.net",
+            "server_port": "39422",
+            "local_port": 1080,
+            "password": "ZFLgP2Lv7hYq",
+            "method": "aes-256-cfb"
+        }
+    ],
+    "localPort": 1080,
+    "index": 0,
+    "global": false,
+    "enabled": true,
+    "isDefault": false
+}
