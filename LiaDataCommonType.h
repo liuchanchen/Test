@@ -7,12 +7,15 @@
 #include <sys/wait.h>
 #include<sys/types.h>
 #include <fcntl.h>
-#include <signal.h>
 #include <errno.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <fcntl.h>           /* Definition of AT_* constants */
 #include <unistd.h>
+#include <mqueue.h>
+#include <sys/msg.h>
+#include <signal.h>
+
 
 
 typedef unsigned char Uint8;

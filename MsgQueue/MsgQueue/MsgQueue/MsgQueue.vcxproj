@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{65C1C3EF-7E45-4CED-B8DD-E616C5DD1C13}</ProjectGuid>
+    <ProjectGuid>{13708319-56C2-4090-82E3-BB6116342DCB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>FIFO</RootNamespace>
+    <RootNamespace>MsgQueue</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -71,7 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Unix\include;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Unix\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -147,20 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\LiaCommon.h" />
-    <ClInclude Include="..\..\..\LiaCommonMacro.h" />
-    <ClInclude Include="..\..\..\LiaDataCommonType.h" />
-    <ClInclude Include="..\src\LiaFifoApi.h" />
-    <ClInclude Include="..\src\LiaFifoSeverMain.h" />
-    <ClInclude Include="resource.h" />
+    <ClCompile Include="..\..\LiaMsgQueue.c" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="FIFO.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\src\LiaFifoApi.c" />
-    <ClCompile Include="..\src\LiaFifoClientMain.c" />
-    <ClCompile Include="..\src\LiaFifoSeverMain.c" />
+    <ClInclude Include="..\..\LiaMsgQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

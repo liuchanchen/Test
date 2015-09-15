@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{65C1C3EF-7E45-4CED-B8DD-E616C5DD1C13}</ProjectGuid>
+    <ProjectGuid>{BEF38854-789C-44A4-AB3E-E170DB6B3206}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>FIFO</RootNamespace>
+    <RootNamespace>SignalProject</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -71,13 +71,14 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Unix\include;</IncludePath>
+    <IncludePath>E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Unix\include;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Unix\include;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -147,20 +148,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\LiaCommon.h" />
-    <ClInclude Include="..\..\..\LiaCommonMacro.h" />
-    <ClInclude Include="..\..\..\LiaDataCommonType.h" />
-    <ClInclude Include="..\src\LiaFifoApi.h" />
-    <ClInclude Include="..\src\LiaFifoSeverMain.h" />
-    <ClInclude Include="resource.h" />
+    <ClCompile Include="..\LiaIPCUsingSignal.c" />
+    <ClCompile Include="..\LiaSignalApi.c" />
+    <ClCompile Include="..\LiaSignalMain.c" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="FIFO.rc" />
+    <ClInclude Include="..\LiaIPCUsingSignal.h" />
+    <ClInclude Include="..\LiaSignalApi.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\LiaFifoApi.c" />
-    <ClCompile Include="..\src\LiaFifoClientMain.c" />
-    <ClCompile Include="..\src\LiaFifoSeverMain.c" />
+    <None Include="..\MakeSignal.sh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

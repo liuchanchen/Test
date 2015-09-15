@@ -1,0 +1,1 @@
+gcc LiaSignalMain.c LiaSignalApi.c -o Signal.out
