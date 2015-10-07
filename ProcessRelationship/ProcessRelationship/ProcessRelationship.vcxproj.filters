@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\LiaCommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiaCommonMacro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiaDataCommonType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LiaProcessRelationApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LiaProcessRelationMain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FIFO\FIFO\src\LiaFifoApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LiaPrintInterProcClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LiaPrintInterProcSever.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LiaProcGroupTestMain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LiaProcGroupTestProcA.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LiaProcGroupTestProcB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SignalProject\LiaSignalApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\LiaProcessRelationApi.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LiaProcessRelationMain.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FIFO\FIFO\src\LiaFifoApi.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LiaPrintInterProcClient.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LiaPrintInterProcSever.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LiaProcGroupTestMain.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LiaProcGroupTestProcA.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LiaProcGroupTestProcB.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SignalProject\LiaSignalApi.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
