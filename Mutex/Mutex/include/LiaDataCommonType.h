@@ -16,7 +16,7 @@
 #include <sys/msg.h>
 #include <signal.h>
 #include <pthread.h>
-#include <sys/select.h>
+
 
 typedef unsigned char Uint8;
 typedef unsigned short Uint16;

@@ -154,6 +154,8 @@
     <ClInclude Include="..\..\LiaDataCommonType.h" />
     <ClInclude Include="..\..\SignalProject\LiaSignalApi.h" />
     <ClInclude Include="..\LiaPrintInterProcClient.h" />
+    <ClInclude Include="..\LiaPrintInterProcessClientUsingThread.h" />
+    <ClInclude Include="..\LiaPrintInterProcessSeverUsingThread.h" />
     <ClInclude Include="..\LiaPrintInterProcSever.h" />
     <ClInclude Include="..\LiaProcessRelationApi.h" />
     <ClInclude Include="..\LiaProcessRelationMain.h" />
@@ -165,12 +167,17 @@
     <ClCompile Include="..\..\FIFO\FIFO\src\LiaFifoApi.c" />
     <ClCompile Include="..\..\SignalProject\LiaSignalApi.c" />
     <ClCompile Include="..\LiaPrintInterProcClient.c" />
+    <ClCompile Include="..\LiaPrintInterProcessClientUsingThread.c" />
+    <ClCompile Include="..\LiaPrintInterProcessSeverUsingThread.c" />
     <ClCompile Include="..\LiaPrintInterProcSever.c" />
     <ClCompile Include="..\LiaProcessRelationApi.c" />
     <ClCompile Include="..\LiaProcessRelationMain.c" />
     <ClCompile Include="..\LiaProcGroupTestMain.c" />
     <ClCompile Include="..\LiaProcGroupTestProcA.c" />
     <ClCompile Include="..\LiaProcGroupTestProcB.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LiaPrintInterProcessSeverUsingThread" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

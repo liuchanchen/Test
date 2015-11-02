@@ -51,6 +51,12 @@
     <ClInclude Include="..\..\SignalProject\LiaSignalApi.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\LiaPrintInterProcessSeverUsingThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LiaPrintInterProcessClientUsingThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\LiaProcessRelationApi.c">
@@ -80,5 +86,14 @@
     <ClCompile Include="..\..\SignalProject\LiaSignalApi.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\LiaPrintInterProcessSeverUsingThread.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LiaPrintInterProcessClientUsingThread.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LiaPrintInterProcessSeverUsingThread" />
   </ItemGroup>
 </Project>

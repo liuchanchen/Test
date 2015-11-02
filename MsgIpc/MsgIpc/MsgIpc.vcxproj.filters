@@ -15,32 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\LiaSignalApi.c">
+    <ClCompile Include="..\MsgIpcSever.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\LiaSignalMain.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\LiaIPCUsingSignal.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\LiaTestSigchild.c">
+    <ClCompile Include="..\MsgIpcClient.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MakeSignal.sh">
-      <Filter>源文件</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\LiaSignalApi.h">
+    <ClInclude Include="..\MsgIpcSever.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\LiaIPCUsingSignal.h">
+    <ClInclude Include="..\LiaMsgQueCommon.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\LiaTestSigchild.h">
+    <ClInclude Include="..\MsgIpcClient.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

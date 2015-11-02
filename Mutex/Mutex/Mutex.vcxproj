@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BEF38854-789C-44A4-AB3E-E170DB6B3206}</ProjectGuid>
+    <ProjectGuid>{6AA9787C-E017-43E5-BE3A-3A1ADD318916}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SignalProject</RootNamespace>
+    <RootNamespace>Mutex</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -71,14 +71,14 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Unix\include;</IncludePath>
+    <IncludePath>F:\unix\linux_share\Test\Mutex\Mutex\include;E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\armA7-linux\include;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Unix\include;</IncludePath>
+    <IncludePath>F:\unix\linux_share\Test\Mutex\Mutex\include;E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\armA7-linux\include;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -148,18 +148,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\LiaIPCUsingSignal.c" />
-    <ClCompile Include="..\LiaSignalApi.c" />
-    <ClCompile Include="..\LiaSignalMain.c" />
-    <ClCompile Include="..\LiaTestSigchild.c" />
+    <ClCompile Include="TestPthreadCond.c" />
+    <ClCompile Include="TestSelelct.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\LiaIPCUsingSignal.h" />
-    <ClInclude Include="..\LiaSignalApi.h" />
-    <ClInclude Include="..\LiaTestSigchild.h" />
+    <ClInclude Include="include\LiaCommon.h" />
+    <ClInclude Include="include\LiaCommonMacro.h" />
+    <ClInclude Include="include\LiaDataCommonType.h" />
+    <ClInclude Include="TestPthreadCond.h" />
+    <ClInclude Include="TestSelelct.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MakeSignal.sh" />
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
